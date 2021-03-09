@@ -354,7 +354,7 @@ RE.removeFormat = function() {
 RE.editor.addEventListener("input", RE.callback);
 RE.editor.addEventListener("keyup", function(e) {
     var KEY_LEFT = 37, KEY_RIGHT = 39;
-    if (e.which == KEY_LEFT || e.which == KEY_RIGHT) {
+    if (e.which == KEY_LEFT || e.which == KEY_RIGHT || e.which == KEY_DOWN || e.which == KEY_UP) {
         RE.enabledEditingItems(e);
     }
 });
